@@ -1,0 +1,256 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: "Satoshi";
+    background-color: gray;
+}
+
+
+.topo{
+    background-color: black;
+    color: aliceblue;
+    height: 40px;
+    padding-top: 10px;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.cabeca{
+    color: white;
+}
+
+.hud{
+    height: 100px;
+}
+
+.BarraDePesquisa{
+    background-color: #F0F0F0;
+    border:none;
+    border-radius:30px;
+    width: 600px;
+    height: 42px;
+    margin-right: 1.5rem;
+
+
+  }
+  
+  #txtbusca{
+    float:left;
+    border-color: none;
+    background-color: transparent;
+    cursor: pointer;
+    padding-left:  10px;
+    padding-bottom: 5px;
+    padding-top: 10px;
+    font-size:15px;
+    border:none;
+    height: 38px;
+    width: 550px;
+  
+  }
+
+.BarraDePesquisa img{
+    float:left;
+    padding-top: 8px;
+    padding-left: 7px;
+    padding-bottom: 2px;
+    cursor: pointer;
+  }
+
+
+.header-inner-content{
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.BarraDeMenu{
+    background-color: white;
+    padding: 1px;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+}
+
+.BarraDeMenu>div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    color: black;
+    font-weight: 100;
+}
+
+
+nav ul{
+   display: flex;
+    list-style: none;
+    align-items: center;
+    padding-top: 43px;
+}
+
+nav img {
+    cursor: pointer;
+}
+
+.nav-icon-container{
+    display: flex;
+    align-items: center;
+}
+
+.nav-icon-container img{
+    cursor: pointer;
+}
+
+.nav-icon-container img:first-child{
+    margin-right: 1rem;
+}
+
+nav ul li:first-child{
+    margin:auto;
+}
+
+nav ul li{
+    color: #000;
+    margin-right: 1.5rem;
+    cursor: pointer;
+}
+
+nav ul li:hover{
+    transform: translateY(-5px);
+    transition: all 0.2s;
+    font-weight: bold;
+}
+
+.header-bottom-side{
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    width: 100%;
+    height: 663px;
+    overflow: hidden;
+}
+
+.header-bottom-side-left{
+    height: 100%;
+    flex-basis: 50%;
+    padding-top: 100px;
+}
+
+.header-bottom-side-left h2{
+    font-family: "Integral CF";
+    font-size: 68px;
+    font-weight: 700;
+    line-height: 64px;
+    margin-bottom: 25px;
+}
+
+.header-bottom-side-left p{
+    margin-bottom: 40px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    
+}
+
+.header-bottom-side-left button{
+    background-color: black;
+    color: #F2F0F1;
+    border: none;
+    cursor: pointer;
+    padding: 15px 64px;
+    border-radius: 9999px;
+    font-weight: 500;
+    font-size: 18px;
+    transition: all 0.2s;
+    margin-bottom: 40px;
+}
+
+.header-bottom-side-left button:hover{
+    background-color: #333131;
+}
+
+
+.header-bottom-side-left ul{
+    display:flex;
+    list-style: none;
+    align-items: center;
+    font-size: 45px;
+    line-height: 54px;
+    padding-top: 20px;
+    margin-right: 20px;
+}
+.header-bottom-side-left ul li img{
+    padding-bottom: 25px;
+}
+
+.header-bottom-side-left ul li{
+    list-style: none;
+    align-items: center;
+    margin-right: 10px;
+    margin-left: 10px;
+
+}
+
+.header-bottom-side-right{
+    height: 100%;
+    flex-basis: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 200px;
+    overflow: absolute;
+    
+}
+
+.header-bottom-side-right ul li{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    overflow: absolute;
+}
+
+#estrela1{
+    overflow:visible;
+    position: absolute;
+    padding-bottom: 200px;
+    padding-right: 500px;
+}
+
+#estrela2{
+    overflow: visible;
+    position: absolute;
+    padding-left: 550px;
+    padding-bottom: 500px;
+}
+
+#casal{
+    height: 1000px;
+    margin: 0 auto;
+    background-size: cover;
+    object-fit: cover;
+    object-position: center;
+    background-position: center;
+    padding-bottom: none;
+    padding-top: 50px;
+    
+
+}
+
+
+
+
+header{
+    background-color: #F2F0F1;
+}
