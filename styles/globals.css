@@ -9,6 +9,7 @@ body{
     background-color: gray;
 }
 
+/* sing up warning*/
 
 .topo{
     background-color: black;
@@ -23,6 +24,10 @@ body{
     margin-right: auto;
 
 }
+
+/* sing up warning*/
+
+/*header*/
 
 .cabeca{
     color: white;
@@ -66,6 +71,37 @@ body{
     cursor: pointer;
   }
 
+  .navbar{
+    background-color: white;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .options{
+    list-style: none;
+    display: none;
+    padding-left: 15px;
+    padding-right: 15px;
+    cursor:pointer;
+
+  }
+
+  .options ul li{
+    padding-top: 5px;
+   
+   
+  }
+
+  .options ul li:hover{
+    transform: translateY(-5px);
+    transition: all 0.2s;
+    font-weight: bold;
+  }
+
 
 .header-inner-content{
     max-width: 1300px;
@@ -73,7 +109,14 @@ body{
     margin-right: auto;
 }
 
-.BarraDeMenu{
+.header-inner-content-bottom{
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.hud{
     background-color: white;
     padding: 1px;
     position: sticky;
@@ -81,10 +124,17 @@ body{
     z-index: 99;
 }
 
-.BarraDeMenu>div{
+.navbar>div{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: relative;
+}
+
+.menu-button{
+    display: none;
+    cursor: pointer;
+    padding-left: 10px;
 }
 
 .logo{
@@ -118,7 +168,13 @@ nav img {
 }
 
 nav ul li:first-child{
-    margin:auto;
+    padding-left: 10px;
+    margin-right: 5px;
+}
+
+nav ul img{
+    cursor: pointer;
+    margin-right: 1.5rem;
 }
 
 nav ul li{
@@ -131,6 +187,10 @@ nav ul li:hover{
     transform: translateY(-5px);
     transition: all 0.2s;
     font-weight: bold;
+}
+
+header{
+    background-color: #F2F0F1;
 }
 
 .header-bottom-side{
@@ -248,9 +308,191 @@ nav ul li:hover{
 
 }
 
+.header-baseboard{
+    background-color: #000;
+    width: 100%;
+    height: 122px;
+    align-items: center;
+    padding: 50px;
+
+}
+
+.header-baseboard ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    justify-content: center;
+    padding-left: 30px;
+}
+
+.header-baseboard ul li{
+    padding-right: 100px;
+}
+
+/*media queries*/
+@media(max-width: 1165px){
+
+    .menu-button{
+        display: block;
+    }
+
+    .logo{
+        align-items: center;
+        margin-left: 10px;
+    }
+
+    .header-bottom-side{
+        flex-direction: column;
+        text-align: center;
+        display: block;
+        top: 100px;
+    }
+
+    .BarraDePesquisa{
+       display: none; 
+    }
+
+    .header-inner-content{
+        display:block;
+        height: 100px;
+
+    }
+    
+    .options{
+        padding-left: 0px;
+        margin-right: 400px;
+    }
+
+    .logo{
+        margin-right: 500px;
+    }
+
+    .header-inner-conten:first-child{
+        flex-direction: column;
+    }
+
+    .show-menu{
+        display: none;
+    }
+
+    nav{
+        position:absolute;
+        background: white;
+        width: 100%;
+        height: 100%;
+        top: 25px;
+        display: flex;
+        display: none;
+
+    }
 
 
+    nav ul{
+        flex-direction: column;
+        width: 250px;
+        padding-top: 100px;
+        padding-right: d;
+        background-color: white;
+        display: none;
+    }
+    
 
-header{
-    background-color: #F2F0F1;
+    .show-menu{
+        display: block
+    } ;
+
+    .options{
+        
+    }
+
+    nav ul{
+        text-align: center;
+    }
+    
+    nav ul li {
+        text-align: center;
+        padding-top: 25px;
+    }
+
+    .header-bottom-side{
+        flex: column;
+        display: flex;
+        height: 1500px;
+    }
+
+    .header-bottom-side-left{
+        flex: column;
+    }
+
+    .header-bottom-side-right {
+        width: 100%;
+        height: 600px;
+        flex: column;
+    }
+
+    .header-baseboard{
+        flex: column;
+       
+    }
+    
+
+}
+
+/*media queries*/
+
+/*header */
+
+
+/*main*/
+
+main{
+    background-color: white;
+}
+
+.page-inner-content{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.cols{
+    grid-template-columns: repeat(4,1fr);
+    gap: 1rem;
+    display: flex;
+}
+
+.cols>*{
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.cols>*:hover{
+    transform: translateY(-5px);
+}
+
+.product{
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-name{
+    font-weight: 600;
+    margin-top: 0.4rem;
+}
+
+.rate{
+    width: 200px;
+}
+
+.price{
+    width: 50px;
+}
+
+.price-promo{
+    width: 200px;
+}
+
+.product img:first-child{
+    width: 80%;
+
 }
