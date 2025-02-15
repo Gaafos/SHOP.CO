@@ -82,27 +82,6 @@ body{
     
   }
 
-  .options{
-    list-style: none;
-    display: none;
-    padding-left: 15px;
-    padding-right: 15px;
-    cursor:pointer;
-
-  }
-
-  .options ul li{
-    padding-top: 5px;
-   
-   
-  }
-
-  .options ul li:hover{
-    transform: translateY(-5px);
-    transition: all 0.2s;
-    font-weight: bold;
-  }
-
 
 .header-inner-content{
     max-width: 1300px;
@@ -164,8 +143,12 @@ nav img {
     cursor: pointer;
 }
 
-.nav-icon-container img:first-child{
-    margin-right: 1rem;
+.nav-icon-container img{
+    margin-left: 10px;
+}
+
+.lupa2{
+    display: none;
 }
 
 nav ul li:first-child{
@@ -309,26 +292,34 @@ header{
 
 }
 
-.header-baseboard{
+.header-baseboard-back{
     background-color: #000;
+    align-items: center;
+    justify-content: center;
     width: 100%;
-    height: 122px;
+    display: flex;
+    
+    
+}
+
+.header-baseboard{
+    max-width: 1300px;
+    justify-content: center;
     align-items: center;
     padding: 50px;
-
+    display: flex;
+    gap: 100px;
+    
 }
 
-.header-baseboard ul {
+.header-baseboard img {
     display: flex;
     align-items: center;
-    list-style: none;
     justify-content: center;
-    padding-left: 30px;
+    
 }
 
-.header-baseboard ul li{
-    padding-right: 100px;
-}
+
 
 /*media queries*/
 @media(max-width: 800px){
@@ -339,10 +330,6 @@ header{
 
     .menu-button{
         display: block;
-    }
-
-    .header-inner-content{
-        
     }
 
     .nav-icon-container{
@@ -386,11 +373,18 @@ header{
         justify-content: center;
 
     }
-    
-    .options{
-        padding-left: 0px;
-        margin-right: 400px;
+
+    .header-bottom-side-left button{
+        width: 90%;
+        align-items: center;
     }
+
+    .header-bottom-side-left{
+        align-items: center;
+        padding: none;
+        margin: none;
+    }
+    
 
     .logo{
         margin-right: 500px;
@@ -400,6 +394,7 @@ header{
         flex-direction: column;
     }
 
+    
     .show-menu{
         display: none;
     }
@@ -468,6 +463,38 @@ header{
     #mobile-dell{
         display: none;
     }
+
+    .lupa2{
+        display: block;
+    }
+
+    .header-baseboard{
+        background-color: black;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .header-baseboard{
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .brand {
+        max-height: 50px; 
+    }
+
+    .brand.bold {
+        max-height: 50px; 
+    }
+    
+    
 }
 
 /*media queries*/
@@ -522,6 +549,7 @@ main{
     display: flex;
     flex-direction: column;
     padding-bottom: 40px;
+    justify-content: center;
 }
 
 .product-name{
@@ -530,15 +558,17 @@ main{
 }
 
 .rate{
-    width: 200px;
+    width: 120px;
+    padding-top: 5px;
 }
 
 .price{
     width: 50px;
+    padding-top: 5px;
 }
 
 .price-promo{
-    width: 200px;
+    width: 170px;
 }
 
 .product img:first-child{
@@ -685,6 +715,27 @@ main{
     padding: 10px 10px;
 }
 
+@media(max-width: 800px){
+
+    .cols{
+        overflow-x: auto;
+        white-space: nowrap;
+        width: 100%;
+        padding-left: 10px;
+    }
+    
+    .product{
+        width: 100%;
+    }
+    
+    .avaliations{
+        overflow-x: auto;
+        white-space: nowrap;
+        width: 100%;
+        padding-left: 10px;
+    }
+}
+
 /* main */
 
 /* footer */
@@ -734,7 +785,7 @@ footer{
     display: flex;
 }
 
-#txtemail{
+.txtemail{
     width: 250px;
     padding: 10px;
     border: 2px solid #ccc;
@@ -811,6 +862,11 @@ footer{
     margin-right: 100px;
 }
 
+.infos-grid{
+    display: flex;
+    align-items: center;
+}
+
 .infos-column h4{
     font-weight: 500;
     font-size: 16px;
@@ -841,6 +897,76 @@ footer{
     
 }
 
-.footer-final p{
+.rights{
     margin-right: 550px;
+}
+
+@media(max-width: 800px){
+    .email-update{
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .email-update-left {
+        width: 100%;
+        padding-bottom: 5px;
+    }
+
+    .email-update-right-top{
+        width: 100%;
+    }
+
+    .email-update-right-top input{
+        width: 100%;
+    }
+
+    .email-update-right-bot{
+        width: 100%;
+    }
+
+    .email-update-right-bot button{
+        width: 100%;
+    }
+
+    .infos-footer{
+        display: block;
+
+    }
+
+    .division img{
+        width: 100%;
+    }
+
+    .infos-grid{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 75px;
+        width: 100%;
+        column-gap: 0cm;
+        margin: none none;
+        padding: none none;
+        margin-left: 10%;
+    }
+
+    .footer-final{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        justify-self: center;
+        justify-items: center;
+        display: block;
+    }
+
+    .rights{
+        margin-right: none;
+        justify-self: center;
+        align-items: center;
+
+    }
+
+    .payments{
+        justify-self: center;
+    }
+    
+
 }
