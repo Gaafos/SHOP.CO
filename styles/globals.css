@@ -460,6 +460,10 @@ header{
         margin-top: 200px;
     }
     
+    .header-bottom-side-right{
+        width: 100%;
+    }
+
     #mobile-dell{
         display: none;
     }
@@ -493,6 +497,8 @@ header{
     .brand.bold {
         max-height: 50px; 
     }
+
+    
     
     
 }
@@ -615,6 +621,10 @@ main{
     flex-direction: column;
 }
 
+.mobile-show{
+    display: none;
+}
+
 .dress-title{
     font-family: "Integral CF";
     display: flex;
@@ -717,6 +727,10 @@ main{
 
 @media(max-width: 800px){
 
+    main{
+        max-width: 100%;
+    }
+
     .cols{
         overflow-x: auto;
         white-space: nowrap;
@@ -725,6 +739,71 @@ main{
     }
     
     .product{
+        width: 100%;
+    }
+
+    .mobile-dellet{
+        display: none;
+    }
+
+    .mobile-show{
+        display: flex;
+    }
+
+    .dress-style{
+        display: block;
+        width: 95%;
+        height: auto;
+        justify-self: center;
+        align-self: center;
+        padding-left: none;
+        flex-wrap: wrap;
+        padding: none;
+        margin-bottom: 25px;
+    }
+
+    .dress-title{
+        font-family: "Integral CF";
+        display: flex;
+        align-self: center;
+        height: 58px;
+        width: auto;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 57.6px;
+        padding-left: 45px;
+        padding-bottom: 100px;
+        padding-top: 70px;
+        
+    }
+
+    .dress-title h3{
+        justify-self: center;
+        flex-wrap: wrap;
+    }
+
+    .dress-upper{
+        flex-direction: column;
+        justify-self: center;
+        padding-right: 30px;
+    }
+
+    .dress-upper img{
+        padding-top: 25px;
+        justify-self: center;
+        width: 100%;
+        
+    }
+
+    .dress-botton{
+        flex-direction: column;
+        justify-self: center;
+        padding-right: 30px;
+        padding-bottom: 50px;
+    }
+
+    .dress-botton img{
+        padding-top: 25px;
         width: 100%;
     }
     
