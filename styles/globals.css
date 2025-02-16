@@ -430,10 +430,15 @@ header{
         padding-top: 25px;
     }
 
+    .header-inner-content-bottom{
+        width: 100%;
+    }
+
     .header-bottom-side{
         flex: column;
         display: flex;
         height: 1500px;
+        width: 100%;
     }
 
     .header-bottom-side-left{
@@ -766,12 +771,13 @@ main{
         font-family: "Integral CF";
         display: flex;
         align-self: center;
+        justify-self: center;
         height: 58px;
-        width: auto;
+        width: 100%;
         font-weight: 700;
         font-size: 40px;
         line-height: 57.6px;
-        padding-left: 45px;
+        padding-left: 75px;
         padding-bottom: 100px;
         padding-top: 70px;
         
@@ -780,6 +786,7 @@ main{
     .dress-title h3{
         justify-self: center;
         flex-wrap: wrap;
+        width: 100%;
     }
 
     .dress-upper{
@@ -803,7 +810,7 @@ main{
     }
 
     .dress-botton img{
-        padding-top: 25px;
+        padding-bottom: 25px;
         width: 100%;
     }
     
