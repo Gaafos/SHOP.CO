@@ -503,7 +503,13 @@ header{
         max-height: 50px; 
     }
 
-    
+    #estrela2{
+        padding-right: 150px;
+    }
+
+    #estrela1{
+        padding-left: 100px;
+    }
     
     
 }
@@ -686,12 +692,6 @@ main{
     align-items: center;
 }
 
-.directions{
-    padding-left: 490px;
-    padding-top: 20px;
-    cursor: pointer;
-}
-
 .ratings-tittle{
     font-family: "integral cf";
     font-size: 48px;
@@ -701,6 +701,21 @@ main{
     padding-bottom: 75px;
     display: flex;
     align-items: start;
+
+}
+
+.directions {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding-right: 20px;
+    margin-left: 70%;
+
+}
+.directions img {
+    top: 50%;
+    cursor: pointer;
 
 }
 
@@ -729,6 +744,8 @@ main{
 .rating-string{
     padding: 10px 10px;
 }
+
+
 
 @media(max-width: 800px){
 
@@ -814,11 +831,27 @@ main{
         width: 100%;
     }
     
+    .ratings-tittle{
+        width: 50%;
+        font-size: 33px;
+    }
+
     .avaliations{
         overflow-x: auto;
         white-space: nowrap;
         width: 100%;
         padding-left: 10px;
+    }
+
+    .directions{
+        padding-left: none;
+        padding-top: none;
+        margin-left: 30%;
+    }
+
+    .ratings-header{
+        padding: none;
+        width: 100%;
     }
 }
 
@@ -980,7 +1013,20 @@ footer{
     display: flex;
     justify-self: center;
     padding-top: 25px;
+    width: 100%;
+
+}
+
+.footer-final p{
+    display: flex;
+    justify-self: center;
+    padding-top: 10px;
+    margin-right: 60%;
     
+}
+
+.payments{
+    width: 700px;
 }
 
 .rights{
@@ -1041,6 +1087,18 @@ footer{
         justify-self: center;
         justify-items: center;
         display: block;
+        width: auto;
+        padding-left: 350px;
+
+    }
+
+    .footer-final p{
+        display: flex;
+        justify-self: center;
+        padding-top: 10px;
+        padding-left: 35px;
+        margin-right: auto;
+        
     }
 
     .rights{
@@ -1054,5 +1112,10 @@ footer{
         justify-self: center;
     }
     
+    }
+    
+    .rights{
+        margin-right: 550px;
+    }
 
 }
